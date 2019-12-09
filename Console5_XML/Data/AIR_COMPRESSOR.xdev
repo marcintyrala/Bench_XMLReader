@@ -1,0 +1,201 @@
+﻿<Device
+  Version="3.2.1*"
+  TestBedIndependent="False"
+  ProtectionCode="False"
+  Protection="Normal"
+  Name="AIR_COMPRESSOR"
+  Management="False"
+  ComponentTree="Components"
+  Provider=""
+  GroupName="EK"
+  FileVersion="3"
+  Rights=""
+  ScriptRef="Script"
+  Init=""
+  Stop="#THIS#STOP">
+  <Description>AIR_COMPRESSOR
+
+Component controls Air Copco compressor.
+
+Generated from SCALE_STANDARD_FATHER Template version 3.2.1
+
+Required:
+MORPHEE 2018 (v3.1.3) or higher
+MANAGEMENT components in version 3.2.1 or higher</Description>
+  <Links>
+    <Link
+      Name="CONTROL_MANAGEMENT"
+      Reference="CONTROL_MANAGEMENT"
+      Optional="True" />
+    <Link
+      Name="MANAGEMENT"
+      Reference="MANAGEMENT"
+      Optional="True" />
+  </Links>
+  <Methods>
+    <Method
+      Name="BUTTON_ACTIVATE"
+      Visibility="Private"
+      Reference="BUTTON_ACTIVATE.xcce"
+      VisibleInScript="False"
+      Precompile="False" />
+    <Method
+      Name="BUTTON_DEACTIVATE"
+      Visibility="Private"
+      Reference="BUTTON_DEACTIVATE.xcce"
+      VisibleInScript="False"
+      Precompile="False" />
+    <Method
+      Name="CHANGE_PRESENCE"
+      Visibility="Public"
+      Reference="CHANGE_PRESENCE.xcce"
+      VisibleInScript="False"
+      Precompile="False" />
+    <Method
+      Name="CHECK_ERROR"
+      Visibility="Private"
+      Reference="CHECK_ERROR.xcce"
+      VisibleInScript="False"
+      Precompile="False" />
+    <Method
+      Name="INIT"
+      Visibility="Private"
+      Reference="INIT.xcce"
+      VisibleInScript="False"
+      Precompile="False" />
+    <Method
+      Name="PREPARE"
+      Visibility="Private"
+      Reference="PREPARE.xcce"
+      VisibleInScript="False"
+      Precompile="False" />
+    <Method
+      Name="PROCESS_CHECK_ERROR"
+      Visibility="Private"
+      Reference="PROCESS_CHECK_ERROR.xcce"
+      VisibleInScript="False"
+      Precompile="False" />
+    <Method
+      Name="PROCESS_INIT"
+      Visibility="Private"
+      Reference="PROCESS_INIT.xcce"
+      VisibleInScript="False"
+      Precompile="False" />
+    <Method
+      Name="PROCESS_PREPARE"
+      Visibility="Private"
+      Reference="PROCESS_PREPARE.xcce"
+      VisibleInScript="False"
+      Precompile="False" />
+    <Method
+      Name="PROCESS_STOP"
+      Visibility="Private"
+      Reference="PROCESS_STOP.xcce"
+      VisibleInScript="False"
+      Precompile="False" />
+    <Method
+      Name="PROCESS_UNPREPARE"
+      Visibility="Private"
+      Reference="PROCESS_UNPREPARE.xcce"
+      VisibleInScript="False"
+      Precompile="False" />
+    <Method
+      Name="RESET_ERROR_CHANNELS"
+      Visibility="Private"
+      Reference="RESET_ERROR_CHANNELS.xcce"
+      VisibleInScript="False"
+      Precompile="False" />
+    <Method
+      Name="SHOW_MANAGEMENT_SCREEN"
+      Visibility="Private"
+      Reference="SHOW_MANAGEMENT_SCREEN.xcce"
+      VisibleInScript="False"
+      Precompile="False" />
+    <Method
+      Name="SHOW_USER_SCREEN"
+      Visibility="Public"
+      Reference="SHOW_USER_SCREEN.xcce"
+      VisibleInScript="False"
+      Precompile="False" />
+    <Method
+      Name="STOP"
+      Visibility="Private"
+      Reference="STOP.xcce"
+      VisibleInScript="False"
+      Precompile="False" />
+    <Method
+      Name="UNPREPARE"
+      Visibility="Private"
+      Reference="UNPREPARE.xcce"
+      VisibleInScript="False"
+      Precompile="False" />
+  </Methods>
+  <Instruments>
+    <Instrument
+      Name="AIRC_MAIN"
+      MenuName=""
+      Reference="AIRC_MAIN.xins"
+      Rights=""
+      Screen1="False"
+      Screen2="False"
+      Screen3="False"
+      Screen4="False" />
+    <Instrument
+      Name="AIRC_OVERVIEW"
+      MenuName=""
+      Reference="AIRC_OVERVIEW.xins"
+      Rights=""
+      Screen1="False"
+      Screen2="False"
+      Screen3="False"
+      Screen4="False" />
+    <Instrument
+      Name="AIRC_OVERVIEW_CUSTOM"
+      MenuName="AIRC_OVERVIEW_CUSTOM"
+      Reference="AIRC_OVERVIEW_CUSTOM.xins"
+      Rights=""
+      Screen1="False"
+      Screen2="False"
+      Screen3="False"
+      Screen4="False" />
+    <Instrument
+      Name="AIRC_SERVICE"
+      MenuName="$STR:AIRC_Name$ - SERVICE"
+      Reference="AIRC_SERVICE.xins"
+      Rights="3;1;2;3;2;1;3;3;1;3;4;1"
+      Screen1="False"
+      Screen2="False"
+      Screen3="1"
+      Screen4="False" />
+    <Instrument
+      Name="AIRC_SERVICE_CUSTOM"
+      MenuName=""
+      Reference="AIRC_SERVICE_CUSTOM.xins"
+      Rights=""
+      Screen1="False"
+      Screen2="False"
+      Screen3="False"
+      Screen4="False" />
+    <Instrument
+      Name="AIRC_USER"
+      MenuName="$STR:AIRC_Name$ - USER"
+      Reference="AIRC_USER.xins"
+      Rights="3;1;2;3;2;2;3;3;2;3;4;2"
+      Screen1="False"
+      Screen2="1"
+      Screen3="False"
+      Screen4="False" />
+    <Instrument
+      Name="AIRC_USER_CUSTOM"
+      MenuName=""
+      Reference="AIRC_USER_CUSTOM.xins"
+      Rights=""
+      Screen1="False"
+      Screen2="False"
+      Screen3="False"
+      Screen4="False" />
+  </Instruments>
+  <Extensions>
+    <Players />
+  </Extensions>
+</Device>
